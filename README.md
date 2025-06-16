@@ -1,12 +1,12 @@
-# MACH EXPLORER DESKTOP APPLICATION
+# 🔹 MACH EXPLORER DESKTOP APPLICATION 🔹
 
 The Mach Explorer is a desktop application developed in tandem with the MACH dataset (Sink et al, 2025). This app allows users to navigate
 and manipulate the MACH dataset, which contains daily climate and streamflow data (1980-2023) and catchment attributes for 1,014 watersheds, along with 
-daily climate and streamflow data (1949-1979) for 395 watersheds within the United States. 
+daily climate and streamflow data (1949-1979) for 395 watersheds within the United States.  
 
 <br>
 
-## DATASET IMPORT TAB
+## 🔹DATASET IMPORT TAB
 Enables the application to access timeseries data located on a user's local machine. The folder location(s) are necessary for the data tabs. Only time series data needs to be downloaded. All other data is included with the app with 
 the exception of the detailed dam information, which can be found on zenodo. 
 
@@ -25,7 +25,7 @@ the exception of the detailed dam information, which can be found on zenodo.
 
 <br>
 
-## SITE SELECTION TAB
+## 🔹SITE SELECTION TAB
 Allows users to filter and select watersheds (sites) from the MACH dataset. ***All subsequent tabs retrieve data based on the sites selected here.***
 
 ### USGS Stream Gauging Site Locations
@@ -63,7 +63,7 @@ Manually add or remove a site by entering the site number. This allows users to 
 
 <br>
 
-## DAILY DATA TAB
+## 🔹DAILY DATA TAB
 Returns daily data values for the filtered sites chosen in the 'Site Selection' tab. The RETRIEVE AND VIEW DATA button must be pressed to retrieve data and whenever variable or time period selections are modified. 
 Please note that retrieving large amounts of daily data (millions of records) will take the program a few minutes. Any additional actions during this retrieval period are not recommended because they will be delayed. 
 **The MACH_ts data folder must be downloaded and extracted prior to utilizing this tab. The filepath is established using the BROWSE FOR MACH DATA FOLDER button on the Dataset Import tab.**
@@ -97,7 +97,7 @@ This table will display the site number, date, and selected variables. Note that
 
 <br>
 
-## MONTHLY DATA TAB
+## 🔹MONTHLY DATA TAB
 Returns daily data values by month for the filtered sites chosen in the 'Site Selection' tab. The RETRIEVE AND VIEW DATA button must be pressed to retrieve data and whenever variable or time period selections are modified. 
 **The MACH_ts data folder must be downloaded and extracted prior to utilizing this tab. The filepath is established using the BROWSE FOR MACH DATA FOLDER button on the Dataset Import tab.**
 
@@ -126,7 +126,7 @@ This table will display the site number, calendar year, month, and selected vari
 
 <br>
 
-## ANNUAL DATA TAB
+## 🔹ANNUAL DATA TAB
 Returns daily data values by year for the filtered sites chosen in the 'Site Selection' tab. The RETRIEVE AND VIEW DATA button must be pressed to retrieve data and whenever variable or time period selections are modified. 
 **The MACH_ts data folder must be downloaded and extracted prior to utilizing this tab. The filepath is established using the BROWSE FOR MACH DATA FOLDER button on the Dataset Import tab.**
 
@@ -158,7 +158,7 @@ This table will display the site number, calendar year or water year, and select
 
 <br>
 
-## MOPEX TAB
+## 🔹MOPEX TAB
 Returns daily data values (January 1, 1948 to December 31, 1979) for watersheds derived from the original MOPEX dataset. The sites are returned based on the 'Site Selection' tab. 
 Any filtered sites with site numbers also present in the 395 original MOPEX watersheds included in the MACH dataset will be retrieved. No data will be returned if none of the 
 'Selected Stream Gauging Sites' appear in MOPEX. Variables returned are precipitation in millimeters (PRCP), observed streamflow discharge in millimeters (OBSQ), minimum air temperature in 
@@ -180,7 +180,7 @@ This table will display the site number, date, and all variables for the applica
 
 <br>
 
-## ATTRIBUTES TAB
+## 🔹ATTRIBUTES TAB
 Returns catchments attributes for filtered sites chosen in the 'Site Selection' tab. Attribute data does NOT need to be downloaded for this tab. 
 
 ### Select Attribute Type 
@@ -212,7 +212,7 @@ This table will display the site number and all attributes selected for the filt
 
 <br>
 
-## LAND COVER TAB
+## 🔹LAND COVER TAB
 Returns land cover percent coverage for filtered sites chosen in the 'Site Selection' tab. Land cover data does NOT need to be downloaded for this tab. 
 
 ### Select Calendar Year(s)
@@ -241,13 +241,17 @@ Select one or more land cover classes.
 This table displays the site number, year, and selected land cover classes (percent of total basin area) for filtered sites. 
 
 ### Download Attributes
-Land cover attributes will be downloaded as a single csv file. 
+Land cover attributes will be downloaded for all sites as a single csv file. 
 
 <br>
 
-## DOCUMENTATION
-The MACH Explorer and the MACH dataset was developed by Katharine Sink and is detailed in the following publication (TBD). Please send any questions or comments to katharine.sink@utdallas.edu. 
-This app uses data downloaded and processed from the following sources: 
+## 🔹DOCUMENTATION
+The MACH Explorer and the MACH dataset were developed by Katharine Sink and are detailed in the following publication (TBD). Please send any questions or comments to katharine.sink@utdallas.edu :sunglasses:
+Dataset Citation: Sink, K. (2025). MACH hydrometeorological dataset for 1,014 catchments in the United States (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.15311986. This app uses data downloaded and processed from the following sources: 
+
+### App Development
+* Shiny R package https://shiny.posit.co/
+* Electron https://www.electronjs.org/
 
 ### Climate
 * Daymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4 R1 https://doi.org/10.3334/ORNLDAAC/2129, available at https://daymet.ornl.gov/
