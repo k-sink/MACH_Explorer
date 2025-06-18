@@ -1,0 +1,34 @@
+# Ignore R binaries and build artifacts
+R/
+R/bin/
+R/library/
+R/etc/
+R/modules/
+R/share/
+R/tcl/
+
+# Node modules and Electron build outputs
+node_modules/
+dist/
+out/
+*.asar
+*.exe
+*.dll
+*.app
+
+
+# Shiny and temp data
+*.qs_cache_temp/
+basin_files/
+.Rhistory
+.RData
+.Rproj.user/
+shiny/data/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Others
+*.zip
+*.tar.gz

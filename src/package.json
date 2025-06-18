@@ -1,0 +1,23 @@
+{
+  "name": "mach-explorer",
+  "version": "1.0.0",
+  "description": "A desktop application, MACH Explorer, using Shiny and Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "shiny",
+    "electron",
+    "desktop-app"
+  ],
+  "author": "Katharine Sink",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^36.3.2"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2"
+  }
+}
